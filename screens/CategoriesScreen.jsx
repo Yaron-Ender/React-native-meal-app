@@ -6,6 +6,7 @@ import { CATEGORIES } from "../data/dummy-data";
 //we get the navigation prop becaus this comp has regestred as screen
 function CategoriesScreen({navigation}) {
   function renderCategoryItem(itemData) {
+    
    const pressHandler = ()=>{
   navigation.navigate("MealsOverview", {
     categoryId: itemData.item.id,
